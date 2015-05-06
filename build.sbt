@@ -1,8 +1,8 @@
-name := "s2-geometry-library"
-
+name := "s2-geometry-library-java-sbt"
+organization := "com.colisweb"
 version := "1.0"
 
-scalaVersion := "2.11.5"
+scalaVersion := "2.11.6"
 
 libraryDependencies ++= Seq(
   "com.google.guava" % "guava" % "r05",
@@ -11,4 +11,4 @@ libraryDependencies ++= Seq(
   "com.google.code.findbugs" % "jsr305" % "3.0.0"
 )
 
-exportJars := true
+publishArtifact in (Compile, packageDoc) := false
